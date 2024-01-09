@@ -99,6 +99,7 @@ export const calculatorSlice = createSlice({
             has2Operators = false;
         },
         calculate: (state) => {
+            /* 
             try {
                 const calculateFunction = () => {
                     return Function('"use strict"; return (' + state.formula + ')')();
@@ -109,6 +110,7 @@ export const calculatorSlice = createSlice({
             } finally {
                 state.formula = state.output;
             }
+            */
         },
     },
   });
