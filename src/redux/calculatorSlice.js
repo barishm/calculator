@@ -30,10 +30,6 @@ const isOperator = (ch) => {
     }
 }
 
-
-
-
-
 export const calculatorSlice = createSlice({
     name: 'calculator',
     initialState: {
@@ -74,7 +70,6 @@ export const calculatorSlice = createSlice({
             }
             
             
-
             //output part
             if(action.payload !== '='){
                 if(action.payload === '+' || 
