@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import {evaluate} from 'mathjs';
 
 
 
@@ -111,6 +112,15 @@ export const calculatorSlice = createSlice({
                 state.formula = state.output;
             }
             */
+
+            try {
+                const result = evaluate(state.formula);
+                state.output = String(result);
+              } catch (error) {
+                state.output = 'Error';
+              } finally {
+                state.formula = state.output;
+            }
         },
     },
   });
