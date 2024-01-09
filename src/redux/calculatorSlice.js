@@ -100,11 +100,13 @@ export const calculatorSlice = createSlice({
         },
         calculate: (state) => {
             try {
-                state.output = String(eval(state.formula));
+                const calculateFunction = () => {
+                    return Function('"use strict"; return (' + state.formula + ')')();
+                };
+                state.output = String(calculateFunction());
             } catch (error) {
                 state.output = 'Error';
-            }
-            finally {
+            } finally {
                 state.formula = state.output;
             }
         },
