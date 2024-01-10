@@ -17,15 +17,15 @@ const Buttons = () => {
             className="jumbo"
             id="clear"
             value="AC"
-            style={{ background: "rgb(172, 57, 57)" }}
+            style={{ background: "rgb(172, 57, 40)" }}
             onClick={() => {dispatch(AC())}}
           >
             AC
           </button>
-          <button id="divide" value="/" style={{ background: "rgb(102, 102, 102)" }} onClick={input} >
+          <button id="divide" value="/" onClick={input} >
             /
           </button>
-          <button id="multiply" value="*" style={{ background: "rgb(102, 102, 102)" }} onClick={input} >
+          <button id="multiply" value="*" onClick={input} >
             x
           </button>
           <button id="seven" value="7" onClick={input} >
@@ -37,7 +37,7 @@ const Buttons = () => {
           <button id="nine" value="9" onClick={input} >
             9
           </button>
-          <button id="subtract" value="-" style={{ background: "rgb(102, 102, 102)" }} onClick={input}>
+          <button id="subtract" value="-" onClick={input}>
             -
           </button>
           <button id="four" value="4" onClick={input}>
@@ -71,7 +71,7 @@ const Buttons = () => {
             id="equals"
             value="="
             style={{
-              background: "rgb(0, 68, 102)",
+              background: "rgb(0, 68, 200)",
               position: "absolute",
               height: "130px",
               bottom: "5px",

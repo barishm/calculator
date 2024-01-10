@@ -21,17 +21,10 @@
 }
 
 body {
-  background: #c2c2d6;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: default;
+  background:gainsboro;
 }
 
 .calculator {
-  border: 2px solid #47476b;
   padding: 5px;
   background: black;
   width: 320px;
@@ -65,28 +58,15 @@ button {
   color: white;
   outline: 1px solid black;
   border: none;
-  background: #4d4d4d;
+  background: #6e6e6e;
   font-family: Share Tech Mono, monospace;
   font-size: 20px;
   cursor: default;
 }
 button:hover {
   color: black;
-  outline: 0.05em solid grey;
-  z-index: 3;
 }
 
 .jumbo {
   width: 160px;
-}
-
-.author {
-  text-align: center;
-  font-family: Share Tech Mono, sans;
-  margin-top: 15px;
-}
-.author a {
-  text-decoration: none;
-  color: #00264d;
-  line-height: 26px;
 }
